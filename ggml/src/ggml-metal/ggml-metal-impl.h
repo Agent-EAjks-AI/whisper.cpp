@@ -431,8 +431,16 @@ typedef struct {
 typedef struct {
     int32_t  ne00;
     int32_t  ne00_4;
-    uint64_t nb01;
+    uint64_t nb1;
+    uint64_t nb2;
+    uint64_t nb3;
     float    eps;
+    int32_t  nef1[3];
+    int32_t  nef2[3];
+    int32_t  nef3[3];
+    uint64_t nbf1[3];
+    uint64_t nbf2[3];
+    uint64_t nbf3[3];
 } ggml_metal_kargs_norm;
 
 typedef struct {
